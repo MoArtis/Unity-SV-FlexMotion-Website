@@ -6,7 +6,7 @@ xref: bootstrapper
 @section Title { }
 
 <div class="text-center mb-4">
-    <img src="/Img/logo.png" alt="Statiq Web" class="w-25"></img>
+    <img src="Img/logo.png" alt="Statiq Web" class="w-25"></img>
 	<h1 class="display-3">FlexMotion</h1>
 </div>
 ```
