@@ -1,0 +1,6 @@
+[submodule "FlexMotion"]
+	path = FlexMotion
+	url = https://github.com/MoArtis/Unity-SV-FlexMotion
+[submodule "Dependencies"]
+	path = Dependencies
+	url = https://github.com/MoArtis/Unity-Website-Dependencies

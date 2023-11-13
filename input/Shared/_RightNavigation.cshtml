@@ -1,0 +1,68 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered store" style="max-width:50%" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Where to buy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6"> <!-- Used col-md-6 to divide the row into two columns -->
+            <a href="#">
+              <div class="card">
+                <img class="card-img-top" src="/img/itchio-logo-store.png" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-title">Itch.io (Recommended)</h2>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#">
+              <div class="card">
+                <img class="card-img-top" src="/img/unity-logo-store.png" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-title">Unity asset store</h2>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<li class="nav-item">
+  <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModalCenter">⏬ Get FlexMotion</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="documentation">📖 Documentation</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="/api/SV.FlexMotion/FlexMotionAnimator/">📃 Scripting API</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="/api/SV.FlexMotion/FlexMotionAnimator/">❓ Support</a>
+</li>
+
+
+@if (Context.GetBool(WebKeys.GenerateSearchIndex))
+{
+    // If search is enabled, show a link to the search page
+    <li class="nav-item">
+        <a href="/search" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </a>
+    </li>
+}
