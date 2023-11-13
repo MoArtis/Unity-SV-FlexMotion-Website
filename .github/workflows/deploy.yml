@@ -51,4 +51,4 @@ jobs:
       - name: Build Website
         run: dotnet run -- deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
