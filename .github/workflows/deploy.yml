@@ -28,6 +28,10 @@ jobs:
       
     runs-on: windows-latest
 
+    defaults:
+      run:
+        working-directory: Website
+
     steps:
       - name: Checkout  
         uses: actions/checkout@v3
@@ -40,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v2  
 
       - name: Install .NET Core SDK
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 7.0.x
 
