@@ -2,7 +2,7 @@
     .Factory
     .CreateDocs(args)
     .AddSourceFiles("../FlexMotion/Runtime/**/*.cs")
-    .DeployToGitHubPages(
+    .DeployToGitHubPagesBranch(
         "MoArtis",
         "https://moartis.github.io",
         Config.FromSetting<string>("GITHUB_TOKEN"),
