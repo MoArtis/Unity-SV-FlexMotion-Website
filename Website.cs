@@ -3,7 +3,7 @@
     .CreateDocs(args)
     .DeployToGitHubPagesBranch(
         "MoArtis",
-        "https://moartis.github.io",
+        "Unity-SV-FlexMotion-Website",
         Config.FromSetting<string>("GITHUB_TOKEN"),
         "main")
     .AddSourceFiles("../FlexMotion/Runtime/**/*.cs")
