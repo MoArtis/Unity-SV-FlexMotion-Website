@@ -46,13 +46,3 @@ jobs:
         run: dotnet run -- deploy
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload output only
-          path: './output'
-          
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
