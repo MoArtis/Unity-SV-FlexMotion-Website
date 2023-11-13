@@ -43,7 +43,9 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Build Website
-        run: dotnet run
+        run: dotnet run -- deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
