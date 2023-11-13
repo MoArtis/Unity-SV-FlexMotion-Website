@@ -4,7 +4,7 @@
     .AddSourceFiles("../FlexMotion/Runtime/**/*.cs")
     .DeployToGitHubPagesBranch(
         "MoArtis",
-        "https://moartis.github.io/Unity-SV-FlexMotion-Website",
+        "https://moartis.github.io",
         Config.FromSetting<string>("GITHUB_TOKEN"),
         "main")
     .RunAsync();
