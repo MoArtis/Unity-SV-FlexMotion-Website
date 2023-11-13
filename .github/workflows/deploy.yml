@@ -22,7 +22,6 @@ concurrency:
 
 jobs:
   deploy:
-    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -54,7 +53,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload output only
-          path: 'output'
+          path: './output'
           
       - name: Deploy to GitHub Pages
         id: deployment
