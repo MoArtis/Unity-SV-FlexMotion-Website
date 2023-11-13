@@ -51,7 +51,7 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Build Website
-        run: dotnet run
+        run: dotnet run --virtual-dir "Unity-SV-FlexMotion-Website"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
