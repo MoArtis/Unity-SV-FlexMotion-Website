@@ -13,7 +13,7 @@
           <div class="col-md-6"> <!-- Used col-md-6 to divide the row into two columns -->
             <a href="#">
               <div class="card">
-                <img class="card-img-top" src="img/itchio-logo-store.png" alt="Card image cap">
+                <img class="card-img-top" src="@Context.GetLink("/img/itchio-logo-store.png")" alt="Card image cap">
                 <div class="card-body">
                   <h2 class="card-title">Itch.io (Recommended)</h2>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -24,7 +24,7 @@
           <div class="col-md-6">
             <a href="#">
               <div class="card">
-                <img class="card-img-top" src="img/unity-logo-store.png" alt="Card image cap">
+                <img class="card-img-top" src="@Context.GetLink("/img/unity-logo-store.png")" alt="Card image cap">
                 <div class="card-body">
                   <h2 class="card-title">Unity asset store</h2>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -43,15 +43,15 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="documentation">📖 Documentation</a>
+  <a class="nav-link" href="xref:documentation">📖 Documentation</a>
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="/api/SV.FlexMotion/FlexMotionAnimator/">📃 Scripting API</a>
+  <a class="nav-link" href="@Context.GetLink("api/SV.FlexMotion/FlexMotionAnimator/")">📃 Scripting API</a>
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="/api/SV.FlexMotion/FlexMotionAnimator/">❓ Support</a>
+  <a class="nav-link" href="@Context.GetLink("api/SV.FlexMotion/FlexMotionAnimator/")">❓ Support</a>
 </li>
 
 
