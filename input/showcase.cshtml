@@ -19,7 +19,7 @@ HasUnityWebGL: true
     <div id="unity-build-title">FlexMotion</div>
   </div>
 </div>
-
+test
 <script>
   var container = document.querySelector("#unity-container");
   var canvas = document.querySelector("#unity-canvas");
@@ -52,7 +52,7 @@ HasUnityWebGL: true
     updateBannerVisibility();
   }
 
-  var buildUrl = "WebGL/Build";
+  var buildUrl = "@Context.GetLink("/WebGL/Build")";
   var loaderUrl = buildUrl + "/231118-WebGL-Normal.loader.js";
   var config = {
     dataUrl: buildUrl + "/231118-WebGL-Normal.data.br",
