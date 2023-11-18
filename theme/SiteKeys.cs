@@ -69,5 +69,7 @@
 		/// A Google Fonts (or other) URL for use in a <c>link</c> element in the header.
 		/// </summary>
 		public const string FontLink = nameof(FontLink);
+
+		public const string HasUnityWebGL = nameof(HasUnityWebGL);
     }
 }
