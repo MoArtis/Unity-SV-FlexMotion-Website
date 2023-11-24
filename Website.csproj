@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="input\Shared\" />
-    <Folder Include="input\WebGL\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="input\documentation.md">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>

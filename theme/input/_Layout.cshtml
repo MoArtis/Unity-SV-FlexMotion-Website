@@ -27,11 +27,6 @@
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
         <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
 	    
-        @if(Document.GetBool(SiteKeys.HasUnityWebGL))
-        {
-            <link rel="stylesheet" href="@Context.GetLink("/builds/template/style.css")">
-        }
-
         <!-- Lunr search -->
         @if (Context.GetBool(WebKeys.GenerateSearchIndex))
         {
@@ -206,18 +201,21 @@
                                         </div>
                                     }
                                 }
-                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
-                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
-                                        @if (IsSectionDefined(SectionNames.RightSidebar))
-                                        {
-                                            @await RenderSectionAsync(SectionNames.RightSidebar, false)
-                                        }
-                                        else
-                                        {
-                                            await Html.RenderPartialAsync("_RightSidebar");
-                                        }
+                                @if (Document.GetBool(SiteKeys.NoRightSidebar) == false)
+                                {
+                                    <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                        <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+                                            @if (IsSectionDefined(SectionNames.RightSidebar))
+                                            {
+                                                @await RenderSectionAsync(SectionNames.RightSidebar, false)
+                                            }
+                                            else
+                                            {
+                                                await Html.RenderPartialAsync("_RightSidebar");
+                                            }
+                                        </div>
                                     </div>
-                                </div>
+                                }
                             </div>
                         </div>
                     }

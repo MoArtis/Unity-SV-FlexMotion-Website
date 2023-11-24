@@ -1,0 +1,7 @@
+food:
+  - vegetables: tomatoes #first list item
+  - fruits: #second list item
+      citrics: oranges
+      tropical: bananas
+      nuts: peanuts
+      sweets: raisins

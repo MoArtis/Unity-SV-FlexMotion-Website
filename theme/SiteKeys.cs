@@ -71,5 +71,7 @@
 		public const string FontLink = nameof(FontLink);
 
 		public const string HasUnityWebGL = nameof(HasUnityWebGL);
+
+		public const string NoRightSidebar = nameof(NoRightSidebar);
     }
 }
