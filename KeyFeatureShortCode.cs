@@ -20,7 +20,7 @@ public class KeyFeatureShortCode : SyncShortcode
         var cardContainerAttribute = new XAttribute("Class", "col-md-4 p-1");
         var cardAttribute = new XAttribute("Class", "card");
         var imgAttribute = new XAttribute("Class", "feature-img card-img-top");
-        var titleAttribute = new XAttribute("Class", "feature-title");
+        var titleAttribute = new XAttribute("Class", "feature-title d-flex align-items-center justify-content-center");
         var h2Attribute = new XAttribute("Class", "card-title text-center");
         var cardBodyAttribute = new XAttribute("Class", "feature-body card-body");
         var descriptionAttribute = new XAttribute("Class", "feature-description");

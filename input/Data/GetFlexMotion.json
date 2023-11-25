@@ -1,0 +1,19 @@
+﻿{
+  "Name": "GetFlexMotion",
+  "NavTitle": "⏬ Get FlexMotion",
+  "ModalTitle": "Get FlexMotion",
+  "Options": [
+    {
+      "Title": "Itch.io",
+      "Img": "/img/itchio-logo-store.png",
+      "Desc": "Recommended if you want updates as quickly as possible. The package must be installed manually.",
+      "Link": "https://www.itch.io"
+    },
+    {
+      "Title": "Unity Asset Store",
+      "Img": "/img/unity-logo-store.png",
+      "Desc": "Installation from Unity's package manager but longer delays between update due to the validation process.",
+      "Link": "https://assetstore.unity.com"
+    }
+  ]
+}

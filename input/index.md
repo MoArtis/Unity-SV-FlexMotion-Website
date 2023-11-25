@@ -16,8 +16,8 @@ xref: bootstrapper
 
 A play-on-demand animation system for Unity by [Mathieu Philippe](https://www.moartis.dev).
 
-While working on a game prototype featuring different type of ranged and melee weapons, I grew tired of fighting with an evergrowing and overly complex [animator controller](https://docs.unity3d.com/Manual/class-AnimatorController.html).\
-Although being great for the use-cases it was designed for, I needed to be able to easily transition from one animation set to another by script.\
+While working on a game prototype featuring different type of ranged and melee weapons, I grew tired of fighting with an evergrowing and overly complex [animator controller](https://docs.unity3d.com/Manual/class-AnimatorController.html). Although being great for the use-cases it was designed for, I needed to be able to easily transition from one animation set to another by script.
+
 Thus I started to develop my own animation system using Unity's [Playables](https://docs.unity3d.com/ScriptReference/Playables.Playable.html). After many months of using and polishing it, I decided to try releasing FlexMotion as my first commercial tool.
 
 </div>
@@ -28,9 +28,12 @@ Thus I started to develop my own animation system using Unity's [Playables](http
 
 # Showcase
 
+```raw
 </br>
+```
 
-#### Check out this [WebGL showcase build](showcase) to test these features yourself.
+Check out the **[WebGL showcase build](showcase)** to test these features yourself.
 
+```raw
 </br>
-
+```

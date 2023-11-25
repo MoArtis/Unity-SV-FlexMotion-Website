@@ -1,0 +1,19 @@
+﻿{
+  "Name": "Support",
+  "NavTitle": "❓ Support",
+  "ModalTitle": "Need help? Contact us!",
+  "Options": [
+    {
+      "Title": "Discord",
+      "Img": "/img/discord.svg",
+      "Desc": "Ask your questions on the dedicated Discord Channel! Don't hesitate to ping me.",
+      "Link": "https://discord.gg/xZ24wxG7FK"
+    },
+    {
+      "Title": "Email",
+      "Img": "/img/mail.svg",
+      "Desc": "Directly contact us via email. It might take a few days to get an answer.",
+      "Link": "https://assetstore.unity.com"
+    }
+  ]
+}
