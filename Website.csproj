@@ -14,12 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="input\documentation.md">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Dependencies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -57,6 +51,15 @@
 
   <ItemGroup>
     <Content Include=".github\workflows\deploy.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="input\documentation2.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="input\Documentation\get-started\index.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
