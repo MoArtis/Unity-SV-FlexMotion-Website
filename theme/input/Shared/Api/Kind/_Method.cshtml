@@ -7,3 +7,6 @@
 @await Html.PartialAsync("Api/Section/_Parameters")
 @await Html.PartialAsync("Api/Section/_ReturnValue")
 @await Html.PartialAsync("Api/Section/_SeeAlso")
+<p>
+@Document.GetString("xref")
+</p>
