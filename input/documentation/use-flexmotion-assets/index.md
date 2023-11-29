@@ -1,6 +1,7 @@
 A more advanced way to play animations with FlexMotion is to use its dedicated asset types. They are called FlexMotion (hence the name of the package). 
-They are (ScriptableObject)[] based data containers referencing one or multiple animation clips and various settings.
+They are [ScriptableObject](https://docs.unity3d.com/2023.3/Documentation/Manual/class-ScriptableObject.html) based data containers referencing one or multiple animation clips and various settings.
 Like an AnimationClip they can be played by the FlexMotionAnimator.
+
 FlexMotion assets come in four different varieties:
 
 - **Solo**: Referencing only one Animation clip.
@@ -38,7 +39,7 @@ public class PlayFlexMotionAsset : MonoBehaviour
 }
 ```
 
-Note that the FlexMotion asset types are inheriting from the same abstract class, so you don't have to specify the type you are using on the serialized field.
+Note that the **FlexMotion** asset types are inheriting from the same abstract class, so you don't have to specify the type you are using on the serialized field.
 
 Using these containers is pretty much the same as playing an animation clip. Thus, you can refer to the [Play animation clips](play-animation-clips) section of the documentation.
 The only key difference is that the settings are being applied on the **motion layer** upon calling the Play method.

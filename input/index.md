@@ -36,7 +36,7 @@ Take back control over your animations with **FlexMotion**!
 
 Check out the **[WebGL showcase build](showcase)** to test these features yourself.
 
-<?# Figure Src="/img/showcase.jpg" Class="text-center" /?>
+<?# Figure Src="/img/showcase.jpg" Class="text-center" Link="showcase" /?>
 
 ```raw
 </br>

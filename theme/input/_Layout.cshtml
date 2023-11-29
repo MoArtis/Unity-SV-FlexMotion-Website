@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <meta xref="@Document.GetString("xref")">
+
         <link href="@Context.GetLink("/assets/bootstrap/bootstrap.css")" rel="stylesheet" />
         @{
             string fontLink = Document.GetString(SiteKeys.FontLink);
