@@ -1,5 +1,4 @@
-﻿xref: play-animation-clip
----
+﻿---
 
 The simplest way to use FlexMotion is to use the **FlexMotionAnimator**'s [Play()](/api/SV.FlexMotion/FlexMotionAnimator/A48EBABB) method with an animation clip.
 

@@ -8,6 +8,7 @@
     .AddShortcode<CalloutShortCode>("Callout")
     .AddShortcode<KeyFeatureShortCode>("KeyFeatures")
     .AddShortcode<XrefShortCode>("Xref")
+    .AddShortcode<AlertShortCode>("Alert")
     // https://github.com/statiqdev/Statiq.Docs/issues/58
     .AddSetting(WebKeys.OptimizeContentFileNames, "false")
     .RunAsync();

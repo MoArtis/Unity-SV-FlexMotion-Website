@@ -9,16 +9,18 @@
             @await Html.PartialAsync("_SidebarItem", (Model, false))
         }
 
-        // Now descend up to 2 levels
-        foreach (IDocument document in OutputPages
+        var sections = OutputPages
             .GetChildrenOf(Model)
-            .Where(x => !x.ContainsKey(Keys.RedirectTo)))
+            .Where(x => !x.ContainsKey(Keys.RedirectTo)); 
+
+        // Now descend up to 2 levels
+        foreach (IDocument document in sections)
         {
             DocumentList<IDocument> children = OutputPages
                 .GetChildrenOf(document)
                 .Where(x => !x.ContainsKey(Keys.RedirectTo))
                 .ToDocumentList();
-                
+
             if (document.GetBool(SiteKeys.ShowInSidebar, true))
             {
                 @await Html.PartialAsync("_SidebarItem", (document, children.Count > 0))

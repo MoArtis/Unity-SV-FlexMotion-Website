@@ -1,7 +1,7 @@
 order: 4
 ---
 
-Pose is a FlexMotionLayer state where the motion is "paused" at a given time.
+Pose is a **FlexMotionLayer** state where the motion is fixed at a given time.
 
 <?# Figure Src="/img/features/Pose.jpg" Class="text-center" Width="50%" /?>
 
@@ -43,4 +43,4 @@ public class PoseFlexMotionLayer : MonoBehaviour
 }
 ```
 
-And obviously a newly played animation will not be posed (unless specifically set as such) and the transition will happen normally.
+And obviously a newly played animation will not be posed (unless specifically set as such) and the transition will happen as expected.
