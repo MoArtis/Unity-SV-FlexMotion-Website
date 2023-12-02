@@ -1,7 +1,7 @@
 order: 3
 ---
 
-If you need to act on an animation being played for a specific duration or just completed, you could just constantly check the playing FlexMotionLayer's time values like so:
+If you need to act on an animation being played for a specific duration or just completed, you could just constantly check the playing FlexMotionLayer's time values as follows:
 
 ```csharp
 using SV.FlexMotion;
@@ -46,7 +46,7 @@ As it is based on the motion duration and current time even non-looping animatio
 - **<?# Xref name="OnTime" xref="api-SV.FlexMotion.FlexMotionLayer.OnTime(System.Single, SV.FlexMotion.FlexMotionLayer.FlexMotionLayerEventHandler)" /?>** - Triggered when the specified time in second is reached.
 - **<?# Xref name="OnNormalizedTime" xref="api-SV.FlexMotion.FlexMotionLayer.OnNormalizedTime(System.Single, SV.FlexMotion.FlexMotionLayer.FlexMotionLayerEventHandler)" /?>** - Triggered when the specified normalized time is reached (for example 0.5f corresponds to 50%).
   
-Here is an example on how you would use these callbacks:
+Here is an example of how you would use these callbacks:
 
 ```csharp
 using SV.FlexMotion;
@@ -87,4 +87,4 @@ This script should produce that result:
     <video autoplay muted loop src="/img/documentation/use-callbacks-result.webm" width="450px"></video>
 </div>
 
-Alternatively, you can directly subscribe to the [Completed](xref:api-SV.FlexMotion.FlexMotionLayer.Completed) and [Stopped](xref:api-SV.FlexMotion.FlexMotionLayer.Stopped) events like you would do with any other C# event.
+Alternatively, you can directly subscribe to the [Completed](xref:api-SV.FlexMotion.FlexMotionLayer.Completed) and [Stopped](xref:api-SV.FlexMotion.FlexMotionLayer.Stopped) events, like you would do with any other C# event.

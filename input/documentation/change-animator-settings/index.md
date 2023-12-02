@@ -3,9 +3,9 @@ order: 3
 
 <?# Figure Src="/img/documentation/change-animator-settings-animator.jpg" Class="text-center" /?>
 
-The **FlexMotionAnimator** component has its own set of settings. 
-Unlike **FlexMotionLayer** settings, the animator settings are persistent and affect every animation clips that will be played. 
-Here is a quick explanation of every settings:
+The **FlexMotionAnimator** component has its own set of settings that affect every animation clips that will be played. 
+Unlike the **FlexMotionLayer** settings, the animator settings are persistent. 
+Here is a quick explanation of every setting:
 
 - **Mask Layer Configs** is the equivalent of Mecanim layers and allows you to play animations on a subset of bones/transforms. 
 Leaving it empty will simply animate the entire avatar. For more information, check the [Use mask layers](xref:use-mask-layers) section of the documentation.
@@ -24,12 +24,12 @@ There are 3 "On Play" settings that modify the setting of a FlexMotionLayer sele
 They can be seen as default settings that are frequently needed on every layer.
 
 - **Apply Playable Ik On Play** enables OnAnimatorIk messages on scripts attached to the same GameObject as the animator. 
-For convienence, FlexMotion adds an dedicated event called [OnAnimatorIK](xref:api-SV.FlexMotion.FlexMotionAnimator.AnimatorIk).
+For convenience, FlexMotion adds an dedicated event called [OnAnimatorIK](xref:api-SV.FlexMotion.FlexMotionAnimator.AnimatorIk).
 - **Apply Foot Ik On Play** enables Foot IK which stabilize feet by placing them close to the root y position.
 - **Apply Mirror On Play** enables mirroring on every layer. If a **FLexMotion container** is also set as mirrored, the mirroring will be flipped.
 
 <?# Callout Type="info" Title="📝 Note" ?>
-Runtime mirroring currently only works for Humanoid rig. 
+Runtime mirroring currently only works for Humanoid rigs. 
 <?#/ Callout ?>
 
 It is also possible to modify most of these settings by script like so:
@@ -56,7 +56,7 @@ public class ModifyAnimatorSettings : MonoBehaviour
         animator.applyFootIkOnPlay = true;
         animator.applyMirrorOnPlay = true;
         
-        // Just a shortcut to the Mecanim Animator Root motion setting
+        // Just a shortcut to the Mecanim Animator's Root motion setting
         animator.SetApplyRootMotion(true);
     }
 }

@@ -5,8 +5,8 @@ Pose is a **FlexMotionLayer** state where the motion is fixed at a given time.
 
 <?# Figure Src="/img/features/Pose.jpg" Class="text-center" Width="50%" /?>
 
-There is clear distinction between **pause** and **pose** though. The former actually impacts every motion layers of a given mask layer and, thus, their transitions. 
-The latter only impacts that one motion layer and doesn't prevent in and out transitions to occur. 
+There is clear distinction between **pause** and **pose**, though. The former actually impacts every motion layers of a given mask layer and, thus, their transitions. 
+The latter only impacts that one motion layer and doesn't prevent in and out transitions from occurring. 
 
 There are multiple ways to set a pose:
 
@@ -37,10 +37,10 @@ public class PoseFlexMotionLayer : MonoBehaviour
         _layer.IsInPose = true;
         
         // Which can be followed (or preceded) by applying a desired time
-        // using one of the time related methods and properties.
+        // using one of the time-related methods and properties.
         _layer.NormalizedTime = 0.25f;
     }
 }
 ```
 
-And obviously a newly played animation will not be posed (unless specifically set as such) and the transition will happen as expected.
+And, obviously, a newly played animation will not be posed (unless specifically set as such) and the transition will happen as expected.

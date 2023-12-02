@@ -6,19 +6,19 @@
     {
       "Title": "Discord",
       "Img": "/img/discord.svg",
-      "Desc": "Ask your questions on the dedicated Discord Channel! Don't hesitate to ping me.",
+      "Desc": "Ask your questions on the dedicated Discord Channel! Don't hesitate to ping me if needed.",
       "Link": "https://discord.gg/xZ24wxG7FK"
     },
     {
       "Title": "Github",
       "Img": "/img/github.svg",
-      "Desc": "Don't hesitate to fill up an issue on Github. I will be notified as soon as the issue is created.",
+      "Desc": "Feel free to fill up an issue on Github. I will be notified as soon as the issue is created.",
       "Link": "https://github.com/MoArtis/Unity-SV-FlexMotion-Issues/issues"
     },
     {
       "Title": "Email",
       "Img": "/img/mail.svg",
-      "Desc": "Directly contact me via email. It might take a few days to get an answer.",
+      "Desc": "Contact me directly via email. It might take a few days to get an response.",
       "Link": "mailto:flexmotion@moartis.dev?subject=FlexMotion - Support Mail from the website"
     }
   ]

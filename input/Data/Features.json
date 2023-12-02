@@ -3,61 +3,61 @@
     {
       "Title": "Animate with C#",
       "Img": "/img/features/AnimateWithCSharp.jpg",
-      "Description": "Simply play an animation clip or a dedicated FlexMotion asset directly from your C# scripts."
+      "Description": "Play animation clips or dedicated FlexMotion assets directly from your C# scripts with ease."
     },
     {
       "Title": "Method chaining",
       "Img": "/img/features/MethodChaining.jpg",
-      "Description": "Easily control how your animations are being played via expressive method chaining. "
+      "Description": "Control how your animations are played using expressive method chaining."
     },
     {
       "Title": "Easing-based transitions",
       "Img": "/img/features/Transitions.webm",
       "IsVideo": true,
-      "Description": "Transitions between motion layers by setting a time and an [easing function](https://easings.net). Transitions can be changed and interrupted at will."
+      "Description": "Create smooth transitions between motion layers by setting a time and applying an [easing function](https://easings.net). Change or interrupt transitions at will."
     },
     {
       "Title": "1D/2D Motion blending",
       "Img": "/img/features/Blending.webm",
       "IsVideo": true,
-      "Description": "Blend multiple animations using handy weight computation methods or setting the weight values manually."
+      "Description": "Blend multiple animations effortlessly using convenient weight computation methods or by manually setting weight values."
     },
     {
       "Title": "Avatar mask layers",
       "Img": "/img/features/MaskLayers.jpg",
-      "Description": "Animate parts of your characters separately via Unity's avatar mask feature."
+      "Description": "Animate different parts of your characters separately by leveraging Unity's avatar mask feature."
     },
     {
       "Title": "Pose",
       "Img": "/img/features/Pose.jpg",
-      "Description": "FlexMotion allows you to easily set a fixed pose on your character and then smoothly transition out to an animation."
+      "Description": "Set fixed poses on your characters. Transition smoothly from one pose to another pose or an animation."
     },
     {
       "Title": "Controllable update rate",
       "Img": "/img/features/UpdateRate.webm",
       "IsVideo": true,
-      "Description": "Slow the update rate of your animations for stylistic or performance reasons."
+      "Description": "Adjust the update rate of your animations to achieve stylistic effects or optimize performance."
     },
     {
       "Title": "Animation rigging",
       "Img": "/img/features/AnimationRigging.webm",
       "IsVideo": true,
-      "Description": "FlexMotion is compatible with the [Animation Rigging package](https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.3/manual/index.html) via a simple component to add to your animated gameobject."
+      "Description": "FlexMotion is fully compatible with the [Animation Rigging package](https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.3/manual/index.html) through one simple component."
     },
     {
-      "Title": "Animator features",
+      "Title": "Mecanim features",
       "Img": "/img/features/AnimatorFeatures.jpg",
-      "Description": "FootIK, OnAnimatorIK, Events and root motion works out of the box. With some additional features for some of them."
+      "Description": "Mecanim features like FootIK, OnAnimatorIK, Events and root motion works out of the box. With some additional features for some of them."
     },
     {
       "Title": "Runtime layer mirroring",
       "Img": "/img/features/Mirror.jpg",
-      "Description": "A motion layer can be mirrored individually at runtime. Works with Humanoid rig only (yet)."
+      "Description": "Motion layers can be mirrored individually at runtime on any character using a humanoid rig."
     },
     {
       "Title": "Time callbacks",
       "Img": "/img/features/Callbacks.jpg",
-      "Description": "Reacts to the end of an animation or a specific animation time via handy callbacks."
+      "Description": "React to reaching a specific time or the end of an animation using convenient callbacks."
     }
   ]
 }

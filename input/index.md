@@ -14,11 +14,11 @@ xref: bootstrapper
 
 <div class="text-center mb-4">
 
-An easy to use play-on-demand animation system for Unity by [Mathieu Philippe](https://www.moartis.dev). 
+An easy-to-use play-on-demand animation system for Unity by [Mathieu Philippe](https://www.moartis.dev). 
 
-When I was working on a game prototype featuring different type of ranged and melee weapons, I grew tired of fighting with an evergrowing and overly complex [animator controller](https://docs.unity3d.com/Manual/class-AnimatorController.html). While Mecanim is great for the use-cases it was designed for, I needed to be able to easily transition from one animation set to another by script.
+When I was working on a game prototype featuring different types of ranged and melee weapons, I grew tired of fighting with an evergrowing and overly complex [animator controller](https://docs.unity3d.com/Manual/class-AnimatorController.html). While Mecanim is great for the use-cases it was designed for, I needed to be able to easily transition from one animation set to another through scripting.
 
-Thus I started to develop my own animation system using Unity's [Playables](https://docs.unity3d.com/ScriptReference/Playables.Playable.html). After many months of using and polishing it, I decided to try releasing FlexMotion as my first commercial tool.
+Thus I started to develop my own animation system using Unity's [Playables](https://docs.unity3d.com/ScriptReference/Playables.Playable.html). After many months of using and polishing it, I decided to release FlexMotion as my first commercial tool.
 
 Take back control over your animations with **FlexMotion**!
 

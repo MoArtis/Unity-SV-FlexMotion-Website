@@ -5,10 +5,9 @@
 
 A FlexMotion container that allows animation blending via the modification of the **FlexMotionLayer**'s blend weights.
 
-This can be done manually using the dedicated method called <?# Xref name="SetBlendWeight" xref="api-SV.FlexMotion.FlexMotionLayer.SetBlendWeight(System.Int32, System.Single)" /?>.
+You can manually achieve this using the dedicated method called <?# Xref name="SetBlendWeight" xref="api-SV.FlexMotion.FlexMotionLayer.SetBlendWeight(System.Int32, System.Single)" /?>.
 
-But it is much more convenient to use the provided weight computation methods.
-Namely [Compute1dBlendWeight](xref:api-sv.flexmotion.FlexMotionLayer.Compute1dBlendWeight(system.single)) and [ComputeNormalized1dBlendWeight](xref:api-sv.flexmotion.FlexMotionLayer.ComputeNormalized1dBlendWeight(system.single)).
+But it is much more convenient to use the provided weight computation methods namely [Compute1dBlendWeight](xref:api-sv.flexmotion.FlexMotionLayer.Compute1dBlendWeight(system.single)) and [ComputeNormalized1dBlendWeight](xref:api-sv.flexmotion.FlexMotionLayer.ComputeNormalized1dBlendWeight(system.single)).
 Both takes a single float parameter representing the desired blend value. 
 
 The normalized version is actually the simplest as it assumes that the animation clips are equally spaced along a virtual blending axis.
@@ -43,19 +42,19 @@ public class Use1dBlendAsset : MonoBehaviour
 That method can make use a FlexMotionLayer setting called [BlendRange](xref:api-sv.flexmotion.FlexMotionLayer.BlendRange) which can be set through the FlexMotion container itself.
 It's a Vector2 that defines a minimum and a maximum blend range resulting in scaled blend positions.
 
-Here is how the previous graph looks like with a blend range value set to (0.25f, 075f): 
+Here is how the previous graph looks with a blend range value set to (0.25f, 075f): 
 
 <?# Figure Src="/img/documentation/1dblending-blendrange.svg" Class="text-center" Width="75%" /?>
 
-Now when it comes to using the non-normalized version of the method, the blend positions must be set.
+When using the non-normalized version of the method, the blend positions must be set.
 It's an ordered set of float ranging from 0.0 to 1.0. It should have as many values as there is clips in the **FlexMotion** asset.
 
-This can be done via the **FlexMotionLayer**'s [SetBlendPositions](api-SV.FlexMotion.FlexMotionLayer.SetBlendPositions(System.Single[])) method which takes an array reference.  
+This can be done via the **FlexMotionLayer**'s [SetBlendPositions](api-SV.FlexMotion.FlexMotionLayer.SetBlendPositions(System.Single[])) method which take an array.  
 Or more conveniently through the FlexMotion container by enabling the "use blend positions" and setting the values like so:
 
 <?# Figure Src="/img/documentation/use-flexmotion-assets-1d-blendpositions.jpg" Class="text-center" /?>
 
-This specific set of clips and blend positions would result in the graph looking like that:
+This specific set of clips and blend positions would result in the graph looking like this:
 
 <?# Figure Src="/img/documentation/1dblending-blendpositions.svg" Class="text-center" Width="75%" /?>
 
@@ -82,7 +81,7 @@ This method only need to be done once but there is a downside: The speed will ne
 Thus, short clips might be going way faster and longer clips, way slower. The **Averaged Lengths Excluded Index** settings help mitigate this issue by excluding from the computation a clip that deviate significantly in length.
 - **None**: Don't apply any equalizing on the clip lengths.
 
-For comparison, here is the same blended motion but using the weighted method instead of none:
+For comparison, here is how the same blended motion looks using the weighted method:
 
 <div Class="text-center">
 <video autoplay muted loop src="/img/documentation/use-flexmotion-assets-weighted-length.webm" width="75%"></video>

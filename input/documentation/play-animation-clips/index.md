@@ -36,7 +36,7 @@ While this is already quite useful, FlexMotion allows you to do way more.
 
 The Play() method returns the **Motion Layer** instance that will play the animation. Different settings are available on a **Motion Layer** and can be modified freely.
 
-One way to do that is tp call the **Motion Layer** dedicated setting methods. Leveraging the fact that these methods are returning the called **Motion Layer** itself, we can use a technique called **Method Chaining**.
+One way to do that is to call the **Motion Layer** dedicated setting methods. Leveraging the fact that these methods are returning the called **Motion Layer** itself, we can use a technique called **Method Chaining**.
 
 To illustrate that here is a modified version of the previous script that will play the animation clip faster and mirror it:
 
@@ -93,13 +93,13 @@ public class PlayAnimation : MonoBehaviour
 
 ```
 
-Thanks to the **ContextMenu** attribute, you can now Right click on the PlayAnimation component and select "Mirror" while in play mode.
+Thanks to the **ContextMenu** attribute, you can now right-click on the PlayAnimation component and select "Mirror" while in play mode.
 
 <?# Figure Src="/img/documentation/play-animation-clips-context-menu.jpg" Class="text-center" /?>
 
-This will mirror the animated object everytime you use that menu.
+This will mirror the animated object every time you use that menu.
 
 <?# Callout Type="info" Title="📝 Notice" ?>
-The Motion Layer states will change if new animation are being played. The layer will be stopped and eventually reused. 
+The Motion Layer states will change if a new animation is being played. The layer will be stopped and eventually reused. 
 To avoid this issue, you can manage the Motion Layer settings just after calling the Play() method or use the OnStop callback to determine its state.
 <?#/ Callout ?>

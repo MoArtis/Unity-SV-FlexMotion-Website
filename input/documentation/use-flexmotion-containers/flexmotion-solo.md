@@ -3,11 +3,11 @@
 
 <?# Figure Src="/img/documentation/use-flexmotion-assets-solo.jpg" Class="text-center" /?>
 
-The simplest FlexMotion container. It allows to pre-set some settings that will be applied when played.
+The simplest FlexMotion container. It allows you to pre-set some settings that will be applied when played.
 
-Everything explained in the [play animation clips](play-animation-clips) section is applicable.
+All information explained in the [play animation clips](play-animation-clips) section is applicable.
 
-The settings should be self-explanatory but in case here is a quick rundown:
+The settings should be self-explanatory but in case, here is a quick rundown:
 
 - **Is Mirror**: Should the animation be mirrored.
 - **Speed**: The speed multiplier to be applied multiplicatively with the FlexMotionAnimator speed setting.
