@@ -280,6 +280,9 @@ code, code[class*="language-"], pre[class*="language-"] {
         }
 
         & a {
+            
+            font-weight: bold;
+            
             &, &:focus, &:active, &:hover {
                 color: $light;
                 //color: lighten($mixed, 25%);
