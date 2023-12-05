@@ -3,7 +3,7 @@ order: 3
 
 <?# Figure Src="/img/documentation/change-animator-settings-animator.jpg" Class="text-center" /?>
 
-The **FlexMotionAnimator** component has its own set of settings that affect every animation clips that will be played. 
+The **FlexMotionAnimator** component has its own set of settings that affect every animation clip that will be played. 
 Unlike the **FlexMotionLayer** settings, the animator settings are persistent. 
 Here is a quick explanation of every setting:
 

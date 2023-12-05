@@ -5,7 +5,7 @@ Pose is a **FlexMotionLayer** state where the motion is fixed at a given time.
 
 <?# Figure Src="/img/features/Pose.jpg" Class="text-center" Width="50%" /?>
 
-There is clear distinction between **pause** and **pose**, though. The former actually impacts every motion layers of a given mask layer and, thus, their transitions. 
+There is clear distinction between **pause** and **pose**, though. The former actually impacts every motion layer of a given mask layer and, thus, their transitions. 
 The latter only impacts that one motion layer and doesn't prevent in and out transitions from occurring. 
 
 There are multiple ways to set a pose:

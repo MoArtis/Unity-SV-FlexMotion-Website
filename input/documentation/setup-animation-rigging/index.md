@@ -3,7 +3,9 @@ order: 8
 
 [Animation Rigging](https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.0/manual/index.html) is an official Unity package allowing to manipulate a character rig to create procedural secondary animations.
 
-<?# Figure Src="/img/documentation/override_transform.gif" Class="text-center" Link="showcase" /?>
+<div Class="text-center">
+    <video autoplay muted loop src="/img/documentation/override_transform.webm" Width="100%"></video>
+</div>
 
 As **Animation Rigging** relies on **Playables**, it has compatibility issues with custom packages also using Playables like **FlexMotion**.
 

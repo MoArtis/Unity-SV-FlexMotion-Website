@@ -16,7 +16,7 @@ The transition will be applied on every future animation played disregarding the
 - Via the FlexMotion containers **override transition** setting.
 - Via the FlexMotionLayer transition related settings like [SetTransition](xref:api-SV.FlexMotion.FlexMotionLayer.SetTransition(SV.FlexMotion.FlexMotionTransition)).
   Modifying a transition this way is not persistent. As soon as another animation will be played the animator's default transition will be used again.
-  So it is typically set just after playing an animation via method chaining.
+  Thus, it is typically set just after playing an animation via method chaining.
 
 For example, this is how you would change the transition for a specific animation by script:
 

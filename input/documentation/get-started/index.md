@@ -12,7 +12,7 @@ The **FlexMotionAnimator** relies on the built-in **Mecanim animator** component
 
 Note that the **Mecanim Animator** component doesn't have any controller set. That's normal and if it does it will be overridden by the **FlexMotionAnimator** logic.
 
-The Avatar setting must be set if the model is using an humanoid rig. If you need help regarding avatars, check the [Unity manual dedicated to this topic](https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html#AvatarSetup).
+The Avatar setting must be set if the model is using a humanoid rig. If you need help regarding avatars, check the [Unity manual dedicated to this topic](https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html#AvatarSetup).
 **Mecanim Animator**'s Update mode setting will be ignored and the two last settings (**Apply Root Motion** and **Culling Mode**) work as expected.
 
 When added, the **FlexMotionAnimator** component should look like that:

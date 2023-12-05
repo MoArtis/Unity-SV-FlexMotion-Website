@@ -16,7 +16,7 @@ If we imagine having 5 animations, here is a visual representation of how the me
 
 <?# Figure Src="/img/documentation/1dblending.svg" Class="text-center" Width="75%" /?>
 
-For example, if you set a blend value of 0.375f (the mid point between the clip 2 and 3), the resulting weights would be Clip 1: 0f, Clip 2: 0.5f, Clip 3: 0.5f, Clip 4: 0f, Clip 5: 0f.
+For example, if you set a blend value of 0.375f (the midpoint between the clip 2 and 3), the resulting weights would be Clip 1: 0f, Clip 2: 0.5f, Clip 3: 0.5f, Clip 4: 0f, Clip 5: 0f.
 
 Here is a simple script using that method:
 
@@ -47,7 +47,7 @@ Here is how the previous graph looks with a blend range value set to (0.25f, 075
 <?# Figure Src="/img/documentation/1dblending-blendrange.svg" Class="text-center" Width="75%" /?>
 
 When using the non-normalized version of the method, the blend positions must be set.
-It's an ordered set of float ranging from 0.0 to 1.0. It should have as many values as there is clips in the **FlexMotion** asset.
+It's an ordered set of floats ranging from 0.0 to 1.0. It should have as many values as there is clips in the **FlexMotion** asset.
 
 This can be done via the **FlexMotionLayer**'s [SetBlendPositions](api-SV.FlexMotion.FlexMotionLayer.SetBlendPositions(System.Single[])) method which take an array.  
 Or more conveniently through the FlexMotion container by enabling the "use blend positions" and setting the values like so:
@@ -63,7 +63,7 @@ The **Compute1dBlendWeight** method fallbacks to the normalized one if the blend
 </br>So don't worry too much if you are not sure which one to use.
 <?#/ Callout ?>
 
-The last important setting is the **Equalized Lengths Type** setting. It's available on all 3 blending variant of the FlexMotion container.
+The last important setting is the **Equalized Lengths Type** setting. It's available on all 3 blending variants of the FlexMotion container.
 It allows the FlexMotionLayer to modify the speed of the clips (and thus their length) enabling smoother blending between clips with widely different lengths.
 
 For example, here is how 50% blending between a long idle animation and a faster walk cycle might look like without any length equalizing applied:
@@ -74,11 +74,11 @@ For example, here is how 50% blending between a long idle animation and a faster
 
 As you can see this is far from ideal and the **Equalized Lengths Type** setting gives us some options:
 
-- **Weighted**: The playback speed of the clips are recomputed on every update based on the clip weights. 
+- **Weighted**: The playback speed of the clips is recomputed on every update based on the clip weights. 
 It makes the blended motion look more consistent without affecting the perceived speed.
 - **Averaged**: A cheaper alternative that compute the clips speed using their average length.
-This method only need to be done once but there is a downside: The speed will never be equal to the clip original speed. 
-Thus, short clips might be going way faster and longer clips, way slower. The **Averaged Lengths Excluded Index** settings help mitigate this issue by excluding from the computation a clip that deviate significantly in length.
+This method only needs to be done once but there is a downside: The speed will never be equal to the clip original speed. 
+Thus, short clips might be going way faster and longer clips, way slower. The **Averaged Lengths Excluded Index** setting helps mitigate this issue by excluding from the computation a clip that deviate significantly in length.
 - **None**: Don't apply any equalizing on the clip lengths.
 
 For comparison, here is how the same blended motion looks using the weighted method:
