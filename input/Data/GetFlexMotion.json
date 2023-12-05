@@ -10,10 +10,11 @@
       "Link": "https://moartis.itch.io/flexmotion"
     },
     {
-      "Title": "Unity Asset Store",
+      "Title": "Unity Asset Store (Coming soon)",
       "Img": "/img/unity-logo-store.png",
       "Desc": "Installation from Unity's package manager but longer delays between updates due to the validation process.",
-      "Link": "https://u3d.as/3aq5"
+      "Link": "#",
+      "RealLink": "https://u3d.as/3aq5"
     }
   ]
 }
