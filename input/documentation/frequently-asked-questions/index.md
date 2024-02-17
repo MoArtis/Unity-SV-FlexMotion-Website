@@ -33,16 +33,6 @@ While I can't guarantee adding every suggestion as a feature, I will at least tr
 
 
 #
-## The Feature showcase sample shows a lot of warnings about missing script. Why is that?
-
-<?# Alert Type="info" ?>
-The Feature Showcase scene has a part related to **Animation Rigging**. 
-If you don't have the package installed, these warnings will be shown in the console.
-You can safely ignore them.
-<?#/ Alert ?>
-
-
-#
 ## How about the general performance and GC allocations?
 
 <?# Alert Type="info" ?>
