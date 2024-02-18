@@ -126,7 +126,7 @@ $font-family-serif: 'Roboto Slab', serif !default;
 }
 
 h1, h2, h3, .display-1, .display-2, .display-3, .display-4, .h-section {
-    font-family: $font-family-serif;
+    font-family: $font-family-sans-serif;
     &:not(:first-child) {
         margin-top: $spacer * 1.5;
     }

@@ -8,7 +8,7 @@ xref: bootstrapper
 
 <div class="text-center mb-4">
     <img src="img/flexmotion-logo.svg" alt="FlexMotion Logo" class="w-25"></img>
-	<h1 class="display-2">FlexMotion</h1>
+	<h1 class="display-1">FlexMotion</h1>
 </div>
 ```
 
