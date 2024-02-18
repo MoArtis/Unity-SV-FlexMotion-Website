@@ -58,6 +58,12 @@
       "Title": "Time callbacks",
       "Img": "/img/features/Callbacks.jpg",
       "Description": "React to reaching a specific time or the end of an animation using convenient callbacks."
+    },
+    {
+      "Title": "Mecanim blending",
+      "Img": "/img/features/MecanimBlending.webm",
+      "IsVideo": "true",
+      "Description": "Blend in and out of a running Mecanim animator controller using a single property."
     }
   ]
 }
