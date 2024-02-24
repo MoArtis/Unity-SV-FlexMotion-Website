@@ -47,7 +47,7 @@
     {
       "Title": "Mecanim features",
       "Img": "/img/features/AnimatorFeatures.jpg",
-      "Description": "Mecanim features like FootIK, OnAnimatorIK, Events and root motion works out of the box. With some additional features for some of them."
+      "Description": "Mecanim features like FootIK, OnAnimatorIK, Events and root motion work out of the box. With some additional features for some of them."
     },
     {
       "Title": "Runtime layer mirroring",
