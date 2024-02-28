@@ -38,14 +38,15 @@ public class CheckForCompletionUpdate : MonoBehaviour
 
 But it is less error prone and much more convenient to simply subscribe to the provided FlexMotionLayer callbacks.
 
-There are 4 callbacks currently available:
+There are 5 callbacks currently available:
 
-- [**OnComplete**](xref:api-SV.FlexMotion.FlexMotionLayer.OnComplete(SV.FlexMotion.FlexMotionLayer.FlexMotionLayerEventHandler)) - Triggered when the animation is completed once per animation loop.
+- **<?# Xref name="OnComplete" xref="api-SV.FlexMotion.FlexMotionLayer.OnComplete<T>(T, System.Action<T, SV.FlexMotion.FlexMotionLayer>)" /?>** - Triggered when the animation is completed once per animation loop.
 As it is based on the motion duration and current time even non-looping animation can trigger the underlying event multiple times.
-- [**OnStopped**](xref:api-SV.FlexMotion.FlexMotionLayer.OnStopped(SV.FlexMotion.FlexMotionLayer.FlexMotionLayerEventHandler)) - Triggered when the animation is stopped. Usually when another animation is played.
-- **<?# Xref name="OnTime" xref="api-SV.FlexMotion.FlexMotionLayer.OnTime(System.Single, SV.FlexMotion.FlexMotionLayer.FlexMotionLayerEventHandler)" /?>** - Triggered when the specified time in second is reached.
-- **<?# Xref name="OnNormalizedTime" xref="api-SV.FlexMotion.FlexMotionLayer.OnNormalizedTime(System.Single, SV.FlexMotion.FlexMotionLayer.FlexMotionLayerEventHandler)" /?>** - Triggered when the specified normalized time is reached (for example 0.5f corresponds to 50%).
-  
+- **<?# Xref name="OnStopped" xref="api-SV.FlexMotion.FlexMotionLayer.OnStopped<T>(T, System.Action<T, SV.FlexMotion.FlexMotionLayer>)" /?>** - Triggered when the animation is stopped. Usually when another animation is played.
+- **<?# Xref name="OnTime" xref="api-SV.FlexMotion.FlexMotionLayer.OnTime<T>(T, System.Single, System.Action<T, SV.FlexMotion.FlexMotionLayer>)" /?>** - Triggered when the specified time in second is reached.
+- **<?# Xref name="OnNormalizedTime" xref="api-SV.FlexMotion.FlexMotionLayer.OnNormalizedTime<T>(T, System.Single, System.Action<T, SV.FlexMotion.FlexMotionLayer>)" /?>** - Triggered when the specified normalized time is reached (for example 0.5f corresponds to 50%).
+- **<?# Xref name="OnUpdate" xref="api-SV.FlexMotion.FlexMotionLayer.OnUpdate<T>(T, System.Action<T, SV.FlexMotion.FlexMotionLayer>)" /?>** - Triggered every time the layer is updated.
+
 Here is an example of how you would use these callbacks:
 
 ```csharp
