@@ -1,0 +1,7 @@
+Title: Alfred
+NoSidebar: true
+xref: alfred
+HasUnityWebGL: true
+---
+
+@await Html.PartialAsync("_UnityBuild")
