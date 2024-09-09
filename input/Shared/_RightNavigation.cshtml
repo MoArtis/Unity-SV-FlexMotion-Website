@@ -1,8 +1,7 @@
 
-@{
-    var shop = Context.Outputs.FromPipeline("Data").FilterSources($"Data/GetFlexMotion.json").FirstOrDefault();
-    @await Html.PartialAsync("_Modal", shop);
-}
+<li class="nav-item">
+    <a class="nav-link" href="https://u3d.as/3aq5">⏬ Get FlexMotion</a>
+</li>
 
 <li class="nav-item">
   <a class="nav-link" href="xref:get-started">📖 Documentation</a>

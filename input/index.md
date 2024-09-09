@@ -18,7 +18,7 @@ When I was working on a game prototype featuring different types of ranged and m
 
 Thus I started to develop my own animation system using Unity's [Playables](https://docs.unity3d.com/ScriptReference/Playables.Playable.html). After many months of using and polishing it, I decided to release FlexMotion as my first commercial tool.
 
-#### **Available right now on the [Unity Asset Store](https://u3d.as/3aq5) and [Itch.io](https://moartis.itch.io/flexmotion)**!
+#### **Available right now on the [Unity Asset Store](https://u3d.as/3aq5)**!
 
 </div>
 
